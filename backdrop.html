@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <style>
+    body,
+    html {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+
+    }
+    
+    .container-fluid {
+      background: url(https://www.centuriontour.tw/wp-content/uploads/2018/04/%E5%A8%81%E5%B0%BC%E6%96%AF-123.jpg) no-repeat top/cover;
+      object-fit: cover;
+      background-attachment: fixed;
+      overflow: auto;
+      /* https://www.centuriontour.tw/wp-content/uploads/2018/04/%E5%A8%81%E5%B0%BC%E6%96%AF-123.jpg */
+      /* https://s2.best-wallpaper.net/wallpaper/1366x768/1202/The-lights-of-Venice-Canal-at-night_1366x768.jpg */
+      padding:0;
+    }
+    .container{
+      height: 100%;
+    }
+    .card{
+      background: transparent;
+      border: none;
+    }
+    
+    h6,
+    .h6,
+    h5,
+    .h5,
+    h2,
+    .h2 {
+      margin: auto;
+    }
+    
+    .grayscale{
+      backdrop-filter: grayscale(1);
+    }
+    .brightness{
+      backdrop-filter: brightness(1.5);
+    }
+    .blur{
+      backdrop-filter: blur(5px);
+    }
+    .contrast{
+      backdrop-filter: contrast(0.8);
+    }
+    .invert{
+      backdrop-filter: invert(0.7);
+    }
+    .opacity{
+      backdrop-filter: opacity(0.4);
+    }
+    .sepia{
+      backdrop-filter: sepia(0.4);
+    }
+    .saturate{
+      backdrop-filter: saturate(1.8);
+    }
+    .hue-rotate{
+      backdrop-filter: hue-rotate(120deg);
+    }
+
+    /* RWD變動 */
+    .boxes{
+      margin-top: 30px;
+      height: 100%;
+    }
+
+    .box{
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid antiquewhite;
+      color: antiquewhite;
+    }
+
+    .box:nth-child(1){
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+
+    @media(min-width:992px){
+      .container-fluid{
+        overflow-y: hidden;
+      }
+      .container{
+        padding: 0;
+        height: 100%;
+        margin: 0 0 0 20px;
+      }
+      .boxes{
+        display: flex;
+        margin: 40px 0px 0 0;
+      }
+      .box{
+        height: 90%;
+        width: 100%;
+      }
+      .card{
+        width: 280px;
+        text-align: center;
+      }
+      .box:nth-child(1){
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 0.5rem;
+    }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid h-100">
+    <div class="container w-100">
+    <div class="boxes text-black w-100 h-100">
+      <div class="box ">
+        <div class="card">
+          <h2> back-filter效果</h2>
+        </div>
+      </div>
+
+      <div class="box ">
+        <div class="card">
+          <h6> backdrop-filter: none</h6>
+        </div>
+      </div>
+
+      <div class="box grayscale">
+        <div class="card">
+          <h6> backdrop-filter: grayscale(1)</h6>
+        </div>
+      </div>
+
+      <div class="box brightness">
+        <div class="card">
+          <h6> backdrop-filter: brightness(1.5)</h6>
+        </div>
+      </div>
+
+      <div class="box blur">
+        <div class="card">
+          <h6> backdrop-filter: blur(5px)</h6>
+        </div>
+      </div>
+
+      <div class="box contrast">
+        <div class="card">
+          <h6> backdrop-filter: contrast(0.8)</h6>
+        </div>
+      </div>
+
+      <div class="box invert">
+        <div class="card">
+          <h6> backdrop-filter: invert(0.7)</h6>
+        </div>
+      </div>
+
+      <div class="box opacity">
+        <div class="card">
+          <h6> backdrop-filter: opacity(0.4)</h6>
+        </div>
+      </div>
+
+      <div class="box sepia">
+        <div class="card">
+          <h6> backdrop-filter: sepia(0.4)</h6>
+        </div>
+      </div>
+
+      <div class="box saturate">
+        <div class="card">
+          <h6> backdrop-filter: saturate(1.8)</h6>
+        </div>
+      </div>
+
+      <div class="box hue-rotate">
+        <div class="card">
+          <h6> backdrop-filter: hue-rotate(120deg)</h6>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
